@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:clickable="true"
+    android:padding="12dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="230dp"
+        android:padding="10dp"
+        android:text="TITLE..."
+        android:textColor="#98F5FF"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="2dp"
+        android:background="#979797" />
+
+    <TextView
+        android:id="@+id/dl_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="THIS IS MESSAGE...."
+        android:minWidth="290dp"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="2dp"
+        android:background="#979797" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dl_cancle"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bt_selector"
+            android:paddingRight="10dp"
+            android:text="CANCLE" />
+        
+        <View 
+            android:layout_height="match_parent"
+            android:layout_width="0.5dp"
+            android:background="#979797"
+            />
+
+        <Button
+            android:id="@+id/dl_ok"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@drawable/dialog_bt_selector"
+            android:text="SURE" />
+    </LinearLayout>
+
+</LinearLayout>
